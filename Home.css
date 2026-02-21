@@ -690,3 +690,98 @@ footer h4, footer h5, footer h6 {
 {
       margin-bottom: 80px !important;
 }
+.banner {
+  background: #c8f7c5;
+  border-radius: 10px;
+  padding: 30px;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-green {
+  background: linear-gradient(90deg, #d8fbd8, #baf3ba);
+}
+
+.dog-img {
+  height: 220px;
+  object-fit: contain;
+}
+
+.right-img {
+  margin-left: auto;
+}
+
+.banner-content {
+  margin-left: 30px;
+}
+
+.discount-bar {
+  background: #1e5eff;
+  color: #fff;
+  padding: 6px 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.banner-text {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 320px;
+}
+
+.shop-btn {
+  border-radius: 30px;
+  padding: 8px 25px;
+  margin-top: 15px;
+}
+
+.price-badge {
+  background: red;
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  width: 120px;
+  margin: auto;
+}
+
+.product-icons img {
+  width: 60px;
+  margin: 10px;
+}
+
+.save-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  background: #1e5eff;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* 📱 Responsive */
+@media(max-width:768px){
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .dog-img {
+    height: 180px;
+  }
+
+  .save-badge {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
