@@ -258,7 +258,7 @@ No product found
     <span class="small">Cash on Delivery</span>
   </label>
   <!-- Button -->
-  <button class="btn btn-primary w-100 order-btn">Order Now</button>
+  <button class="btn btn-primary w-100 order-btn" onclick="goToOrder()">Order Now</button>
 </div>
 <!--------------------------------Footer------------------------------>
 <footer class="footer-section text-white pt-5 pb-4">
@@ -531,6 +531,10 @@ paymentBoxes.forEach(box => {
     box.querySelector("input").checked = true;
   });
 });
+
+function goToOrder(){
+  window.location.href = "Thanks.html";
+}
 </script>
 
 </body>
